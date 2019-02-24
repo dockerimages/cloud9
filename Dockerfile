@@ -1,4 +1,5 @@
 FROM node:latest as build
+MAINTAINER Frank Lemanschik <frank@dspeed.eu>
 LABEL maintainer="Frank Lemanschik <frank@dspeed.eu>"
 
 RUN buildDeps='make build-essential g++ gcc python2.7' && softDeps="tmux git" \
